@@ -1,0 +1,22 @@
+DBSCan is a clustering based algorith which uses density to form clusters
+
+In DBScan there are mainly two hyper parameters 1]Epsilon and 2]min_points
+
+    1] Epsilon is the unit distance through which a circle is formed having radius epsilon (it can be 1mm,1cm etc.)
+    2] min_points are the number of points required to be inside the circle to mark it as dense area 
+
+There are three types of points in DBScan
+    1] Core:- the point through which if we draw a circle then points falling in that circle should be greater than or equal to min_points
+    2] Border:- the point through which if we draw a circle have less than min_points but having atleast 1 core point
+    3] Noise:- the point which is neither a core point nor a border point
+
+Desity Connected Points:- If two points are density connected points then we can simply form a cluster of that two points
+        Two points are said to be density connected points if they are connected through a series of core points and distance b/w two core points is less than epsilon distance
+
+How DBScan algorith works 
+    Step 1 - Identify all points as either core point, border point or noise point
+    Step 2 - For all of the unclustered core points
+        Step 2a - Create a new cluster
+        Step 2b - add all the points that are unclustered and density connected to the current point into this cluster
+    Step 3 - For each unclustered border point assign it to the cluster of nearest core point
+    Step 4 - Leave all the noise points as it is.

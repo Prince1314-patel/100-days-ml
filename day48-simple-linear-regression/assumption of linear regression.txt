@@ -1,0 +1,4 @@
+1] linear relationship
+    input and output columns should have linear relationship b/w them
+2] Multicollinearity
+    Two inputs columns should not ne dependent on each other i.e they should be independent

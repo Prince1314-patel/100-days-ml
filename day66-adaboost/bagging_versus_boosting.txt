@@ -1,0 +1,12 @@
+Bagging v/s boosting
+
+1] Type of model used
+    In bagging we use fully grown decision tree which have low bias but high variance and boosting use shallow decision tree which has high bias and 
+    low variance
+2] Sequential V/S Parallel
+    In bagging we form chunks of data from the original data and feed it to diffrent decision trees so this is a parallel training model, whereas in 
+    Boosting we first train a single model and then train 2nd model while taking input from 1st model's error so this is a sequential training
+3] Weightage of base learners
+    In Bagging every model has same weights i.e that every model say will be accepted same, In boosting every model has diffrent weights so the model 
+    with higher weight will have more say in output
+     

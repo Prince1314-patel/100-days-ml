@@ -1,0 +1,29 @@
+Min-Max Scaler
+Definition: Transforms data by scaling each feature to a given range, typically [0, 1] or [-1, 1].
+
+When to Use:
+
+When you need features to be within a specific bounded range.
+Suitable for algorithms sensitive to the scale of data, such as KNN and neural networks.
+Useful when the data does not have outliers, as outliers can significantly affect the min and max values.
+Example:
+Original data: [2, 4, 6, 8, 10]
+Scaled data (range [0, 1]): [0, 0.25, 0.5, 0.75, 1]
+
+Standard Scaler
+Definition:Transforms data to have a mean of 0 and a standard deviation of 1, effectively standardizing the distribution of the data.
+
+When to Use:
+
+When you want to center the data and scale it based on variance.
+Suitable for algorithms that assume the data is normally distributed, such as linear regression, logistic regression, and PCA.
+More robust to outliers compared to min-max scaling, as it uses the mean and standard deviation.
+Example:
+Original data: [2, 4, 6, 8, 10]
+Mean (
+𝜇
+μ): 6
+Standard deviation (
+𝜎
+σ): 2.83 (approximately)
+Standardized data: [-1.41, -0.71, 0, 0.71, 1.41] (approximately)

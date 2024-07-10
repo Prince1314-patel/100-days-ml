@@ -1,0 +1,39 @@
+XGBoost stands for Extreme Gradientboosting
+
+Why XGBoost is important and why is it used so much?
+
+    There are three main reasons why XGBoost is given more importance than other machine learning algo
+
+        1. Flexibility
+            1)Cross-platform:
+                XGBoost can be used on various operating systems like Windows, macOS, and Linux, making it versatile and easy to integrate into different environments.
+            2)Multiple language support:
+                XGBoost supports multiple programming languages, including Python, R, Java, Julia, C++, and Scala, which makes it accessible to a wide range of developers and data scientists.
+            3)Integration with other libraries and tools:
+                XGBoost seamlessly integrates with other popular data science libraries and tools such as scikit-learn in Python, the caret package in R, and Apache Spark. This allows for smooth integration into existing workflows and pipelines.
+            4)Support for all kinds of ML problems:
+                XGBoost can handle various types of machine learning problems, including regression, classification, ranking, and user-defined prediction problems. This versatility makes it a go-to choice for many different types of data science projects.
+        2. Speed
+            1)Parallel Processing:
+                XGBoost is designed to utilize multiple CPU cores for training, which significantly speeds up the training process compared to traditional boosting algorithms that operate in a more sequential manner.
+            2)Out-of-core computing:
+                This feature allows XGBoost to handle very large datasets that do not fit into memory by using external memory (disk storage). This capability is crucial for big data applications.
+            3)Optimized Data Structure:
+                XGBoost uses efficient data structures like DMatrix to store and manipulate data, which reduces memory usage and increases computation speed.
+            4)Cache awareness:
+                XGBoost is designed to be cache-aware, meaning it efficiently uses CPU cache to speed up computations. This reduces the time spent on memory access and speeds up the overall processing.
+            5)Distributed computing:
+                XGBoost supports distributed computing frameworks like Apache Spark and Hadoop, allowing it to scale across multiple machines for handling very large datasets and computationally intensive tasks.
+            6)GPU Support:
+                XGBoost can leverage GPU acceleration for even faster training, particularly beneficial for large-scale data and deep models. GPUs can significantly speed up the matrix operations involved in training.
+        3. Performance
+            1)Regularized learning objective:
+                XGBoost includes regularization parameters to prevent overfitting, which improves the generalization of the model to unseen data. This makes the models more robust and reliable.
+            2)Handling missing values:
+                XGBoost has built-in mechanisms to handle missing values in the dataset. It can learn the best way to handle missing values, ensuring they don't negatively impact model performance.
+            3)Sparsity awareness split finding:
+                XGBoost efficiently handles sparse data (data with many zeros or missing values) by skipping the zero entries during split finding. This is particularly useful for datasets with high-dimensional sparse features.
+            4)Efficient split finding (Weighted quantile sketch + Approximate tree learning):
+                XGBoost uses advanced algorithms like weighted quantile sketch and approximate tree learning to efficiently find the best splits, reducing the computational complexity and speeding up the training process.
+            5)Tree pruning:
+                XGBoost implements a tree pruning algorithm to remove splits that do not improve the model’s performance. This results in simpler, more interpretable models and avoids overfitting by preventing the growth of overly complex trees.

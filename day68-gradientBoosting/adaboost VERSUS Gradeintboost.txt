@@ -1,0 +1,8 @@
+DIFFRENCE B/W ADABBOST AND GRADIENTBOOST
+
+1] NO OF LEAF NODES
+    In Adaboost me use the max_leaf_nodes of decisoion tree as 2 AND in Gradientboost we take 8 to 32 leaf nodes
+
+2] LEARNIING RATE
+    In Adaboost we assign weights to each model which generally tells the importance of each model and 
+    in Gradientboost we assign learning rate to each model(learning rate for every model is same)
